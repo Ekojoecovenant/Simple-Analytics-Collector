@@ -1,0 +1,27 @@
+{
+  "name": "simple-analytics-collector",
+  "version": "0.0.1",
+  "description": "An API that lets websites send analytics events (like page views), and a dashboard API to query the stats.",
+  "homepage": "https://github.com/Ekojoecovenant/Simple-Analytics-Collector#readme",
+  "bugs": {
+    "url": "https://github.com/Ekojoecovenant/Simple-Analytics-Collector/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ekojoecovenant/Simple-Analytics-Collector.git"
+  },
+  "license": "MIT",
+  "author": "ekojoecovenant",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "fastify": "^5.6.0",
+    "fastify-jwt": "^4.1.3",
+    "fastify-plugin": "^5.0.1",
+    "pg": "^8.16.3"
+  }
+}
