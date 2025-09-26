@@ -32,7 +32,7 @@ export async function loginUser(req, reply) {
   }
 
   const token = req.server.jwt.sign({ id: user.id, email: user.email });
-  return { msg: "Login successful", token: token };
+  return { message: "Login successful", token: token };
 }
 
 // export async function registerUser(fastify, { email, password }) {
