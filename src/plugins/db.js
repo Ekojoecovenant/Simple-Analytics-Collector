@@ -8,8 +8,7 @@ config();
 async function dbPlugin(fastify, opts) {
   const pool = new Pool({
     connectionString:
-      process.env.DATABASE_URL ||
-      "postgres://testUser:test@localhost:5432/mydb",
+      process.env.DATABASE_URL
   });
 
   fastify.decorate("db", pool);

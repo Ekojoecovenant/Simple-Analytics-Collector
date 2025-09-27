@@ -10,6 +10,7 @@ import statsRoutes from "./routes/stats.route.js";
 import fastifyStatic from "@fastify/static";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
+import dbRoutes from "./routes/db.setup.route.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -25,7 +26,7 @@ function buildApp(opts = {}) {
     origin: "*",
     // origin: ['http://localhost:5173', 'https://your-production-domain.com'],
     methods: ["GET", "POST", "OPTIONS"],
-    credentials: true
+    credentials: true,
   });
 
   // Static files
@@ -39,6 +40,7 @@ function buildApp(opts = {}) {
   app.register(siteRoutes, { prefix: "/api/sites" });
   app.register(eventRoutes, { prefix: "/api/events" });
   app.register(statsRoutes, { prefix: "/api/stats" });
+  app.register(dbRoutes, { prefix: "/db/setup" });
 
   // Test route
   app.get("/", async () => {
