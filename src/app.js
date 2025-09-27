@@ -40,7 +40,7 @@ function buildApp(opts = {}) {
   app.register(siteRoutes, { prefix: "/api/sites" });
   app.register(eventRoutes, { prefix: "/api/events" });
   app.register(statsRoutes, { prefix: "/api/stats" });
-  app.register(dbRoutes, { prefix: "/db/setup" });
+  // app.register(dbRoutes, { prefix: "/db/setup" });
 
   // Test route
   app.get("/", async () => {
