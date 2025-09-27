@@ -10,7 +10,7 @@ import statsRoutes from "./routes/stats.route.js";
 import fastifyStatic from "@fastify/static";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
-import dbRoutes from "./routes/db.setup.route.js";
+// import dbRoutes from "./routes/db.setup.route.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
