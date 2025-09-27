@@ -7,8 +7,8 @@
   }
 
   // API endpoint (your fastify backend)
-  var API_URL = "https://simple-analytics-collector.pxxl.xyz/api/events";
-  // var API_URL = "https://simple-analytics-collector.onrender.com/api/events";
+  // var API_URL = "https://simple-analytics-collector.pxxl.xyz/api/events";
+  var API_URL = "https://simple-analytics-collector.onrender.com/api/events";
 
   // Collect data
   var payload = {
