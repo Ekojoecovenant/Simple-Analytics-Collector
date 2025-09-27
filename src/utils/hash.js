@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcrypt.js";
 
 export async function hashPassword(password) {
   return await bcrypt.hash(password, 10);
