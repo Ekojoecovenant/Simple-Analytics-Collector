@@ -7,7 +7,7 @@
   }
 
   // API endpoint (your fastify backend)
-  var API_URL = "https://alphashelf.pxxl.xyz/api/events"; // change to prod later
+  var API_URL = "https://simple-analytics-collector.pxxl.xyz/api/events"; // change to prod later
 
   // Collect data
   var payload = {
